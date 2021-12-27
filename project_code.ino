@@ -69,7 +69,7 @@ void loop() {
   Serial.println();
   Serial.print("Message : ");
   content.toUpperCase();
-if (content.substring(1) == "AC DF 0E 22") //change here the UID of the card/cards that you want to give access
+if (content.substring(1) == "AC DF 0E 22") //{card 1} change here the UID of the card/cards that you want to give access
   {
    Serial.println("Authorized access");
 lcd.setCursor(0,0);
@@ -79,7 +79,7 @@ lcd.setCursor(1,0);
 lcd.print("access");
     delay(3000);
   }
-   if (content.substring(1) == "CA 2D 8E 19") //change here the UID of the card/cards that you want to give access
+   if (content.substring(1) == "CA 2D 8E 19") //{card 2}change here the UID of the card/cards that you want to give access
   {
     Serial.println("Authorized access");
 lcd.setCursor(0,0);
